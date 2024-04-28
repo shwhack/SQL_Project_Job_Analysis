@@ -19,7 +19,7 @@ WITH top_paying_jobs AS (
     WHERE
         1 = 1
         AND job_title_short = 'Data Analyst'
-        AND job_location = 'Chicago, IL'
+        AND job_location IN ('Chicago, IL', 'Columbus, OH', 'Boston, MA', 'Philadelphia, PA', 'Anywhere')
         AND salary_year_avg IS NOT NULL
     ORDER BY
         salary_year_avg DESC
@@ -40,8 +40,8 @@ ORDER BY
 
 /*
 Here's the breakdown of the most demanded skills for data analysts in 2023, based on job postings in Chicago, IL:
-SQL is the leading with a count of 9.
-Python and Tableau are tied with a count of 4.
-Excel, R, and AWS follow closely with a count of 3.
-Other skills such as Azure, Scala, and React show varying degrees of demand.
+SQL is the leading with a count of 7.
+Python and Tableau are tied with a count of 6.
+R follows closely with a count of 3.
+Other skills such as Excel, Pandas, and Jupyter show varying degrees of demand.
 */

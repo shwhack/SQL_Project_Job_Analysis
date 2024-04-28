@@ -20,7 +20,7 @@ LEFT JOIN company_dim
 WHERE
     1 = 1
     AND job_title_short = 'Data Analyst'
-    AND job_location = 'Chicago, IL'
+    AND job_location IN ('Chicago, IL', 'Columbus, OH', 'Boston, MA', 'Philadelphia, PA', 'Anywhere')
     AND salary_year_avg IS NOT NULL
 ORDER BY
     salary_year_avg DESC
